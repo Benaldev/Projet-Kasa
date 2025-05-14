@@ -1,5 +1,12 @@
 footer {
   background-color: black;
+  margin-top: 20px;
+  height: 209px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 
   .footer-text {
     color: white;

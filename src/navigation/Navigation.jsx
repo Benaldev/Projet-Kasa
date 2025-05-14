@@ -11,13 +11,15 @@ const Navigation = () => {
   return (
     <BrowserRouter>
       <Header />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/logement/:id' element={<Logement />} />
-        <Route path='/about-us' element={<AboutUs />} />
-        <Route path='/error-404' element={<Error404 />} />
-        <Route path='/*' element={<Error404 />} />
-      </Routes>
+      <main className='main-content'>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/logement/:id' element={<Logement />} />
+          <Route path='/about-us' element={<AboutUs />} />
+          <Route path='/error-404' element={<Error404 />} />
+          <Route path='/*' element={<Error404 />} />
+        </Routes>
+      </main>
       <Footer />
     </BrowserRouter>
   );
