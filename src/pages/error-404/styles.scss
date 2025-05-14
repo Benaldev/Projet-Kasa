@@ -1,0 +1,21 @@
+.error-container {
+  text-align: center;
+
+  .error-title {
+    font-weight: 700px;
+    font-size: 288px;
+    color: #ff6060;
+    margin: 100px;
+  }
+
+  .error-message {
+    font-weight: 500px;
+    font-size: 18px;
+    color: #ff6060;
+    margin-bottom: 100px;
+  }
+
+  p {
+    margin-bottom: 100px;
+  }
+}
