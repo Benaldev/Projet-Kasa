@@ -1,0 +1,31 @@
+.logementCardContainer {
+  width: calc(100% / 3);
+  box-sizing: border-box;
+  padding: 20px;
+
+  .logementCard {
+    box-sizing: border-box;
+    height: 340px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .logementCardHover {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(transparent, transparent, transparent, black);
+    display: flex;
+    align-items: flex-end;
+  }
+
+  h2 {
+    color: white;
+    font-size: 18px;
+    width: 40%;
+    font-weight: normal;
+  }
+}

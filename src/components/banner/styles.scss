@@ -1,0 +1,27 @@
+.banner {
+  height: 223px;
+  margin: 20px 0;
+  border-radius: 25px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.bannerHover {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 48px;
+}
+
+.bannerHome {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.bannerAboutUs {
+  background-color: rgba(0, 0, 0, 0.3);
+}
