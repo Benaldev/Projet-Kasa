@@ -26,3 +26,16 @@
 .bannerAboutUs {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+@media (max-width: 768px) {
+  .banner {
+    padding-right: 110px;
+  }
+
+  .bannerHover {
+    text-align: start;
+    font-size: 24px;
+    padding-right: 110px;
+    padding-left: 20px;
+  }
+}

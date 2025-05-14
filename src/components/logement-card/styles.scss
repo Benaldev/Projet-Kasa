@@ -30,3 +30,13 @@
     font-weight: 700;
   }
 }
+
+@media (max-width: 768px) {
+  .logementCardContainer {
+    width: 100%;
+
+    .logementCard {
+      height: 255px;
+    }
+  }
+}

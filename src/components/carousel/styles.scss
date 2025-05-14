@@ -35,3 +35,15 @@
     left: 50%;
   }
 }
+
+@media (max-width: 768px) {
+  .carousel {
+    .chevron {
+      font-size: 50px;
+    }
+
+    .counter {
+      display: none;
+    }
+  }
+}
