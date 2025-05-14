@@ -6,12 +6,13 @@
   h1 {
     font-size: 36px;
     color: #ff6060;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
 
   p {
     font-size: 18px;
     margin-bottom: 20px;
+    margin-top: 0;
   }
 }
 
@@ -28,6 +29,7 @@
   align-items: center;
   justify-content: center;
   margin-right: 10px;
+  margin-bottom: 20px;
   padding: 0 10px;
 }
 
@@ -56,6 +58,7 @@
   object-fit: cover;
   object-position: center;
   margin-left: 10px;
+  margin-top: 15px;
 }
 
 .collapseContainer {
