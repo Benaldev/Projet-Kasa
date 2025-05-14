@@ -7,3 +7,11 @@ body {
     margin: 0 auto;
   }
 }
+
+@media (max-width: 768px) {
+  body {
+    .main-content {
+      padding: 10px 10px;
+    }
+  }
+}

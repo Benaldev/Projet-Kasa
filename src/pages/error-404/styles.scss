@@ -6,6 +6,8 @@
     font-size: 288px;
     color: #ff6060;
     margin: 100px;
+    display: flex;
+    justify-content: center;
   }
 
   .error-message {
@@ -13,9 +15,27 @@
     font-size: 18px;
     color: #ff6060;
     margin-bottom: 100px;
+
+    .brError {
+      display: none;
+    }
   }
 
   p {
     margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .error-container {
+    .error-title {
+      font-size: 96px;
+    }
+
+    .error-message {
+      .brError {
+        display: block;
+      }
+    }
   }
 }

@@ -12,5 +12,19 @@ footer {
     color: white;
     font-size: 24px;
     font-weight: 500;
+
+    .brFooter {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    .footer-text {
+      .brFooter {
+        display: block;
+      }
+    }
   }
 }

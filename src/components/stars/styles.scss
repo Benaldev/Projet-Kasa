@@ -10,3 +10,10 @@
 .emptyStar {
   color: #e3e3e3;
 }
+
+@media (max-width: 768px) {
+  .star {
+    font-size: 15px;
+    margin-right: 5px;
+  }
+}

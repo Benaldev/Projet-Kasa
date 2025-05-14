@@ -41,7 +41,7 @@ const Logement = () => {
             ))}
           </div>
         </div>
-        <div>
+        <div className='hostContainer'>
           <div className='host'>
             <div className='hostName'>
               <p>{logement.host.name.split(' ')[0]}</p>
@@ -53,7 +53,9 @@ const Logement = () => {
               alt='Photo de profil du loueur'
             />
           </div>
-          <Stars rate={logement.rating} />
+          <div className='starsRate'>
+            <Stars rate={logement.rating} />
+          </div>
         </div>
       </div>
       <div className='collapseContainer'>

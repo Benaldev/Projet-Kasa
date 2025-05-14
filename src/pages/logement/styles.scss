@@ -7,58 +7,70 @@
     font-size: 36px;
     color: #ff6060;
     margin-bottom: 5px;
+    font-weight: 500;
   }
 
   p {
     font-size: 18px;
     margin-bottom: 20px;
     margin-top: 0;
+    font-weight: 500;
   }
 }
 
 .tags {
   display: flex;
-}
 
-.tag {
-  height: 25px;
-  border-radius: 10px;
-  background-color: #ff6060;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 10px;
-  margin-bottom: 20px;
-  padding: 0 10px;
-}
-
-.host {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  justify-content: flex-end;
-
-  .hostName {
-    color: #ff6060;
-    font-size: 18px;
-    text-align: right;
-  }
-
-  p {
-    padding: 0;
-    margin: 0;
+  .tag {
+    height: 25px;
+    border-radius: 10px;
+    background-color: #ff6060;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    padding: 0 30px;
+    font-size: 14px;
+    font-weight: 700;
   }
 }
 
-.hostProfilPicture {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center;
-  margin-left: 10px;
-  margin-top: 15px;
+.hostContainer {
+  .host {
+    order: 1;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: flex-end;
+
+    .hostName {
+      color: #ff6060;
+      font-size: 18px;
+      text-align: right;
+    }
+
+    p {
+      padding: 0;
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .hostProfilPicture {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
+      margin-left: 10px;
+      margin-top: 15px;
+    }
+  }
+
+  .starRate {
+    order: 2;
+  }
 }
 
 .collapseContainer {
@@ -68,4 +80,81 @@
 
 .collapseItem {
   width: 49%;
+}
+
+@media (max-width: 768px) {
+  .logementDetails {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+    h1 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    .tag {
+      font-size: 10px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .hostContainer {
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .host {
+      order: 1;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      justify-content: flex-end;
+
+      .hostName {
+        color: #ff6060;
+        font-size: 18px;
+        text-align: right;
+      }
+
+      p {
+        padding: 0;
+        margin: 0;
+        font-size: 12px;
+      }
+
+      .hostProfilPicture {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+        margin-left: 10px;
+        margin-top: 15px;
+      }
+    }
+
+    .starRate {
+      order: 2;
+    }
+  }
+
+  .collapseContainer {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .collapseItem {
+    width: 100%;
+  }
 }
