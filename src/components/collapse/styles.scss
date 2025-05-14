@@ -10,18 +10,16 @@
 
 .collapseTextClose {
   background-color: #f6f6f6;
-  padding: 0;
   height: 0px;
   box-sizing: border-box;
   overflow: hidden;
   margin: 0;
   transition: 0.3s;
-  overflow: hidden;
 }
 
 .collapseTextOpen {
   background-color: #f6f6f6;
-  padding: 20px;
+  padding: 10px;
   box-sizing: border-box;
   margin: 0;
   transition: 0.3s;
@@ -31,4 +29,16 @@
     margin: 0;
     padding: 0;
   }
+}
+
+.chevron {
+  transition: transform 0.3s;
+}
+
+.chevron-down {
+  transform: rotate(-180deg);
+}
+
+.description {
+  margin: 0;
 }

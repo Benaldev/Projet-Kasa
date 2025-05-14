@@ -1,7 +1,18 @@
 import React from 'react';
+import footerLogo from '../../assets/images/footerLogo.png';
+import './styles.scss';
 
 const Footer = () => {
-  return <footer>Footer</footer>;
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer>
+      <img src={footerLogo} alt='Logo Kasa' />
+      <div>
+        <p className='footer-text'>© {currentYear} Kasa. All rights reserved</p>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

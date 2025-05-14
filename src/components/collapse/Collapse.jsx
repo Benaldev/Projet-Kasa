@@ -9,20 +9,20 @@ const Collapse = ({ title, content }) => {
       <div className='collapse' onClick={() => setIsOpen(!isOpen)}>
         {title}{' '}
         <i
-          className={
-            isOpen ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down'
-          }
-        ></i>
+          className={`fa-solid fa-chevron-up chevron ${
+            isOpen ? 'chevron-down' : ''
+          }`}
+        />
       </div>
       <div className={isOpen ? 'collapseTextOpen' : 'collapseTextClose'}>
         {Array.isArray(content) ? (
           <ul>
-            {content.map((text) => (
-              <li>{text}</li>
+            {content.map((text, index) => (
+              <li key={index}>{text}</li>
             ))}
           </ul>
         ) : (
-          <p>{content}</p>
+          <p className='description'>{content}</p>
         )}
       </div>
     </div>
