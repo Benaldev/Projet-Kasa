@@ -24,6 +24,10 @@ const Logement = () => {
     setLoading(false);
   }, []);
 
+  if (logement === null) {
+    return null;
+  }
+
   return loading ? (
     <div>En cours de chargement</div>
   ) : (
